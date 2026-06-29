@@ -561,6 +561,9 @@ function initPageTransition() {
     if (!a) return;
     var href = a.getAttribute("href");
     if (!href || href === "#" || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:")) return;
+    var cur = (window.location.pathname.split("/").pop() || "index.html").split("#")[0];
+    var tgt = href.split("#")[0] || "index.html";
+    if (tgt === cur && href.includes("#")) return;
     e.preventDefault();
     overlay.classList.add("active");
     setTimeout(function() { window.location.href = href; }, 200);
