@@ -331,6 +331,26 @@ footer .social{
 }
 #ai-toggle:hover{background:var(--green);color:var(--bg);}
 
+#scroll-top{
+  position:fixed;
+  bottom:24px;
+  right:90px;
+  z-index:199;
+  width:54px;
+  height:54px;
+  background:var(--panel);
+  border:2px solid var(--border);
+  color:var(--muted);
+  font-size:20px;
+  cursor:pointer;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  transition:border-color .1s steps(2), color .1s steps(2);
+}
+#scroll-top.visible{display:flex;}
+#scroll-top:hover{border-color:var(--green);color:var(--green);}
+
 #ai-panel{
   position:fixed;
   bottom:90px;

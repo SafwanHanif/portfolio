@@ -585,9 +585,48 @@ function setupReveal() {
   els.forEach(function(el) { obs.observe(el); });
 }
 
+function initScrollTop() {
+  var btn = document.getElementById("scroll-top");
+  if (!btn) return;
+  window.addEventListener("scroll", function() {
+    btn.classList.toggle("visible", window.scrollY > 400);
+  });
+  btn.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+function initNavHighlight() {
+  var about = document.getElementById("about");
+  var contact = document.getElementById("contact");
+  if (!about || !contact) return;
+  var navLinks = document.querySelectorAll("nav ul a");
+  if (!navLinks.length) return;
+  var aboutLink, contactLink;
+  navLinks.forEach(function(a) {
+    var h = a.getAttribute("href");
+    if (h.indexOf("#about") > -1) aboutLink = a;
+    if (h.indexOf("#contact") > -1) contactLink = a;
+  });
+  if (!aboutLink && !contactLink) return;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function(a) { a.classList.remove("active"); });
+        if (entry.target.id === "about" && aboutLink) aboutLink.classList.add("active");
+        if (entry.target.id === "contact" && contactLink) contactLink.classList.add("active");
+      }
+    });
+  }, { threshold: 0.3 });
+  if (about) obs.observe(about);
+  if (contact) obs.observe(contact);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initAIWidget();
   initThemeToggle();
   initPageTransition();
   setupReveal();
+  initScrollTop();
+  initNavHighlight();
 });
