@@ -22,6 +22,8 @@
   --muted:#7a6e5a;
 }
 [data-theme="light"] body::before{opacity:0.25;}
+[data-theme="light"] nav{background:rgba(245,240,232,0.92);}
+[data-theme="light"] .term .title-bar{background:var(--panel);}
 
 *{margin:0;padding:0;box-sizing:border-box;}
 
