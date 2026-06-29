@@ -529,4 +529,29 @@ function initAIWidget() {
   input.addEventListener("keydown", e => { if (e.key === "Enter") send(); });
 }
 
-document.addEventListener("DOMContentLoaded", initAIWidget);
+function initThemeToggle() {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  const saved = localStorage.getItem("theme");
+  if (saved === "light") {
+    document.documentElement.setAttribute("data-theme", "light");
+    btn.textContent = "☀";
+  }
+  btn.addEventListener("click", () => {
+    const html = document.documentElement;
+    if (html.getAttribute("data-theme") === "light") {
+      html.removeAttribute("data-theme");
+      localStorage.setItem("theme", "dark");
+      btn.textContent = "☾";
+    } else {
+      html.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+      btn.textContent = "☀";
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initAIWidget();
+  initThemeToggle();
+});
