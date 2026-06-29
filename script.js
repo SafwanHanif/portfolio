@@ -338,6 +338,21 @@ const PROJECTS = [
   },
   // ── UI/UX Design Projects ──
   {
+    id: "kprts",
+    title: "KPRTS — Government Complaint App",
+    category: "uiux",
+    tagLabel: "UI/UX",
+    summary: "Led the design of a comprehensive government complaint app — streamlining how citizens submit and track applications.",
+    problem: "Citizens struggle with opaque, paper-based government complaint processes — no visibility into submission status, long wait times, and no feedback loop.",
+    research: "Studied existing government service portals and conducted user interviews to identify pain points in complaint tracking and status visibility.",
+    process: "Designed end-to-end complaint submission and tracking flow in Figma. Focused on reducing form friction, providing clear status indicators, and building trust through transparent tracking.",
+    stack: ["Figma", "FigJam", "Wireframing", "Prototyping"],
+    github: "#",
+    demo: "#",
+    images: [],
+    figmaEmbed: "https://embed.figma.com/proto/EaZz4CaIYTGYaInhmduIFQ/KPRTS?page-id=0%3A1&node-id=2-2&starting-point-node-id=2%3A2&embed-host=share"
+  },
+  {
     id: "job-matching-app",
     title: "Job Matching App",
     category: "uiux",
