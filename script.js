@@ -353,6 +353,21 @@ const PROJECTS = [
     figmaEmbed: "https://embed.figma.com/proto/EaZz4CaIYTGYaInhmduIFQ/KPRTS?page-id=0%3A1&node-id=2-2&starting-point-node-id=2%3A2&embed-host=share"
   },
   {
+    id: "cheezious-redesign",
+    title: "Cheezious App Redesign (Concept)",
+    category: "uiux",
+    tagLabel: "UI/UX",
+    summary: "Redesigned the Cheezious mobile app as a UI/UX practice project — improving navigation, menu browsing, and the ordering experience.",
+    problem: "The original Cheezious app had cluttered navigation and a confusing menu browsing flow that slowed down the ordering process.",
+    research: "Analyzed the existing Cheezious app UX for pain points in navigation depth, menu categorization, and checkout flow efficiency.",
+    process: "Focused on simplifying navigation structure, improving menu taxonomy, and streamlining the order-to-checkout flow with a cleaner visual hierarchy.",
+    stack: ["Figma", "Prototyping"],
+    github: "#",
+    demo: "#",
+    images: [],
+    figmaEmbed: "https://embed.figma.com/proto/1FIC5oMXdSGNgIPhiSiwzU/Cheezious-App?node-id=23-3&p=f&viewport=420%2C316%2C0.05&scaling=scale-down&content-scaling=fixed&starting-point-node-id=23%3A3&page-id=0%3A1&embed-host=share"
+  },
+  {
     id: "job-matching-app",
     title: "Job Matching App",
     category: "uiux",
