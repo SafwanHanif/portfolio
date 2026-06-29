@@ -383,21 +383,6 @@ const PROJECTS = [
     figmaEmbed: "https://embed.figma.com/proto/0tepZOEPp5mY9z0kDKrVvO/Utorrent-App?node-id=38-431&page-id=0%3A1&starting-point-node-id=38%3A431&embed-host=share"
   },
   {
-    id: "job-matching-app",
-    title: "Job Matching App",
-    category: "uiux",
-    tagLabel: "UI/UX",
-    summary: "Tinder-style swipe interface for matching job seekers with roles fast.",
-    problem: "Traditional job boards are slow and overwhelming — long lists, heavy forms, low engagement.",
-    research: "Studied swipe-based interaction patterns (dating apps) and applied them to job discovery; interviewed job seekers about decision fatigue.",
-    process: "Wireframed core swipe flow in Figma, tested card information hierarchy (role, salary, company) against user comprehension.",
-    stack: ["Figma", "FigJam", "Prototyping", "Design Systems"],
-    github: "#",
-    demo: "#",
-    images: [],
-    figmaEmbed: ""
-  },
-  {
     id: "home-service-marketplace",
     title: "Home Service Marketplace",
     category: "uiux",
@@ -411,36 +396,6 @@ const PROJECTS = [
     demo: "#",
     images: [],
     figmaEmbed: "https://embed.figma.com/proto/XYdYaGW4cqSp2QpqykR0O8/Untitled?page-id=0%3A1&node-id=9-70&p=f&viewport=-1154%2C-310%2C0.45&scaling=scale-down&content-scaling=fixed&starting-point-node-id=9%3A70&embed-host=share"
-  },
-  {
-    id: "ai-dashboard-design",
-    title: "AI Dashboard Design",
-    category: "uiux",
-    tagLabel: "UI/UX",
-    summary: "Data-dense dashboard UI for monitoring AI model performance and usage.",
-    problem: "AI teams need to monitor model metrics without drowning in noise.",
-    research: "Audited existing ML monitoring tools (Weights & Biases, Grafana) for information density patterns.",
-    process: "Designed modular widget system allowing teams to customize their own metric views.",
-    stack: ["Figma", "Prototyping"],
-    github: "#",
-    demo: "#",
-    images: [],
-    figmaEmbed: ""
-  },
-  {
-    id: "chatbot-interface-design",
-    title: "Chatbot Interface Design",
-    category: "uiux",
-    tagLabel: "UI/UX",
-    summary: "Conversational UI patterns for an AI assistant product — message states, typing indicators, memory cues.",
-    problem: "Chat interfaces often hide AI reasoning and memory state, confusing users about what the bot 'knows.'",
-    research: "Reviewed conversational UX patterns across ChatGPT, Claude, and Intercom-style bots.",
-    process: "Prototyped memory indicators and confidence cues so users understand assistant context at a glance.",
-    stack: ["Figma", "FigJam"],
-    github: "#",
-    demo: "#",
-    images: [],
-    figmaEmbed: ""
   },
   {
     id: "deep-proctor",
