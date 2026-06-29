@@ -396,6 +396,21 @@ const PROJECTS = [
     demo: "#",
     images: [],
     figmaEmbed: ""
+  },
+  {
+    id: "deep-proctor",
+    title: "DeepProctor",
+    category: "uiux",
+    tagLabel: "UI/UX",
+    summary: "Clean and modern dashboard for invigilators to monitor exams, track incidents, and manage proctoring sessions seamlessly.",
+    problem: "Invigilators need a clear, intuitive interface to monitor multiple exam sessions, track incidents in real time, and manage proctoring workflows without cognitive overload.",
+    research: "Focused on reducing cognitive load for invigilators during high-stakes exam monitoring — prioritizing glanceable status indicators, clear incident classification, and minimal navigation depth.",
+    process: "Designed in Figma with a focus on dashboard clarity, session management flows, and incident tracking. Iterated on information hierarchy to surface the most critical data (active sessions, flagged incidents) at the top.",
+    stack: ["Figma", "Prototyping"],
+    github: "#",
+    demo: "#",
+    images: [],
+    figmaEmbed: "https://embed.figma.com/proto/shALCKR2kJZ7ONVcK1T0wN/Deep-Proctor?page-id=0%3A1&node-id=1-2&p=f&viewport=20%2C311%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share"
   }
 ];
 
