@@ -68,6 +68,7 @@
   document.getElementById("d-summary").textContent = project.summary;
   document.getElementById("d-github").href = project.github;
   document.getElementById("d-demo").href = project.demo;
+  if (project.github === "#") document.getElementById("d-github").style.display = "none";
   if (project.demo === "#") document.getElementById("d-demo").style.display = "none";
   document.getElementById("d-stack").innerHTML = project.stack.map(s => `<span>${s}</span>`).join("");
 
