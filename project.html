@@ -123,13 +123,8 @@
         <p>${project.research}</p>
       </div>
       <div class="detail-section">
-        <h3>Process & Wireframes</h3>
-        <p>${project.process}</p>
-        <div class="diagram-box">[ wireframe screenshots go here ]</div>
-      </div>
-      <div class="detail-section">
-        <h3>Final Prototype</h3>
-        <div class="diagram-box">[ embed Figma prototype link / screenshots here ]</div>
+        <h3>Key Features</h3>
+        <ul class="feature-list">${(project.features || []).map(f => `<li>${f}</li>`).join("")}</ul>
       </div>
       ${galleryHTML(project.images)}
       ${figmaHTML(project.figmaEmbed)}

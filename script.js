@@ -350,7 +350,14 @@ const PROJECTS = [
     github: "#",
     demo: "#",
     images: [],
-    figmaEmbed: "https://embed.figma.com/proto/EaZz4CaIYTGYaInhmduIFQ/KPRTS?page-id=0%3A1&node-id=2-2&starting-point-node-id=2%3A2&embed-host=share"
+    figmaEmbed: "https://embed.figma.com/proto/EaZz4CaIYTGYaInhmduIFQ/KPRTS?page-id=0%3A1&node-id=2-2&starting-point-node-id=2%3A2&embed-host=share",
+    features: [
+      "End-to-end complaint submission flow with guided form steps",
+      "Real-time complaint tracking dashboard with status indicators",
+      "Clear categorization for efficient routing to departments",
+      "Paperless submission reducing manual follow-ups",
+      "Status notifications keeping citizens informed at every stage"
+    ]
   },
   {
     id: "cheezious-redesign",
@@ -365,7 +372,14 @@ const PROJECTS = [
     github: "#",
     demo: "#",
     images: [],
-    figmaEmbed: "https://embed.figma.com/proto/1FIC5oMXdSGNgIPhiSiwzU/Cheezious-App?node-id=23-3&p=f&viewport=420%2C316%2C0.05&scaling=scale-down&content-scaling=fixed&starting-point-node-id=23%3A3&page-id=0%3A1&embed-host=share"
+    figmaEmbed: "https://embed.figma.com/proto/1FIC5oMXdSGNgIPhiSiwzU/Cheezious-App?node-id=23-3&p=f&viewport=420%2C316%2C0.05&scaling=scale-down&content-scaling=fixed&starting-point-node-id=23%3A3&page-id=0%3A1&embed-host=share",
+    features: [
+      "Simplified bottom navigation for one-handed mobile use",
+      "Improved menu taxonomy with category-based browsing",
+      "Streamlined order customization before adding to cart",
+      "Faster checkout flow with saved addresses and payment",
+      "Visual hierarchy improvements for better scanability"
+    ]
   },
   {
     id: "utorrent-redesign",
@@ -380,7 +394,14 @@ const PROJECTS = [
     github: "#",
     demo: "#",
     images: [],
-    figmaEmbed: "https://embed.figma.com/proto/0tepZOEPp5mY9z0kDKrVvO/Utorrent-App?node-id=38-431&page-id=0%3A1&starting-point-node-id=38%3A431&embed-host=share"
+    figmaEmbed: "https://embed.figma.com/proto/0tepZOEPp5mY9z0kDKrVvO/Utorrent-App?node-id=38-431&page-id=0%3A1&starting-point-node-id=38%3A431&embed-host=share",
+    features: [
+      "Decluttered interface with clear active/seeded/paused status",
+      "Improved download queue management and prioritization",
+      "Simplified file selection and management per torrent",
+      "Intuitive search and filter for large torrent libraries",
+      "Clean visual feedback for download progress and completion"
+    ]
   },
   {
     id: "home-service-marketplace",
@@ -395,7 +416,14 @@ const PROJECTS = [
     github: "#",
     demo: "#",
     images: [],
-    figmaEmbed: "https://embed.figma.com/proto/XYdYaGW4cqSp2QpqykR0O8/Untitled?page-id=0%3A1&node-id=9-70&p=f&viewport=-1154%2C-310%2C0.45&scaling=scale-down&content-scaling=fixed&starting-point-node-id=9%3A70&embed-host=share"
+    figmaEmbed: "https://embed.figma.com/proto/XYdYaGW4cqSp2QpqykR0O8/Untitled?page-id=0%3A1&node-id=9-70&p=f&viewport=-1154%2C-310%2C0.45&scaling=scale-down&content-scaling=fixed&starting-point-node-id=9%3A70&embed-host=share",
+    features: [
+      "Browse and search local service providers by category",
+      "Provider cards with key trust signals — ratings, response time, pricing",
+      "Urgent vs. scheduled booking flow for different service needs",
+      "Real-time availability status and instant booking confirmation",
+      "Complete design system for consistent provider-to-booking experience"
+    ]
   },
   {
     id: "deep-proctor",
@@ -410,7 +438,14 @@ const PROJECTS = [
     github: "#",
     demo: "#",
     images: [],
-    figmaEmbed: "https://embed.figma.com/proto/shALCKR2kJZ7ONVcK1T0wN/Deep-Proctor?page-id=0%3A1&node-id=1-2&p=f&viewport=20%2C311%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share"
+    figmaEmbed: "https://embed.figma.com/proto/shALCKR2kJZ7ONVcK1T0wN/Deep-Proctor?page-id=0%3A1&node-id=1-2&p=f&viewport=20%2C311%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share",
+    features: [
+      "Real-time exam session monitoring dashboard at a glance",
+      "Incident tracking with severity classification and timestamps",
+      "Quick-action tools for flagging and resolving proctoring issues",
+      "Session management with join/leave controls for invigilators",
+      "Glanceable status indicators for active, flagged, and completed sessions"
+    ]
   }
 ];
 
