@@ -551,7 +551,40 @@ function initThemeToggle() {
   });
 }
 
+function initPageTransition() {
+  const overlay = document.createElement("div");
+  overlay.id = "page-transition";
+  overlay.textContent = "> navigating";
+  document.body.appendChild(overlay);
+  document.body.addEventListener("click", function(e) {
+    var a = e.target.closest("a");
+    if (!a) return;
+    var href = a.getAttribute("href");
+    if (!href || href === "#" || href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:")) return;
+    e.preventDefault();
+    overlay.classList.add("active");
+    setTimeout(function() { window.location.href = href; }, 200);
+  });
+}
+
+function setupReveal() {
+  var sel = "section, .skill-card, .project-card, .detail-section, .term, .detail-hero";
+  var els = document.querySelectorAll(sel);
+  if (!els.length) return;
+  els.forEach(function(el) {
+    if (!el.classList.contains("reveal")) el.classList.add("reveal");
+  });
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) { entry.target.classList.add("visible"); }
+    });
+  }, { threshold: 0.08 });
+  els.forEach(function(el) { obs.observe(el); });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initAIWidget();
   initThemeToggle();
+  initPageTransition();
+  setupReveal();
 });

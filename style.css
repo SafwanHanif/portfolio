@@ -469,6 +469,24 @@ footer .social{
   border:none;
 }
 
+/* PAGE TRANSITION OVERLAY */
+#page-transition{
+  position:fixed;inset:0;z-index:99999;
+  background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:14px;color:var(--green);
+  opacity:0;pointer-events:none;
+  transition:opacity .15s steps(3);
+}
+#page-transition.active{opacity:1;pointer-events:all;}
+#page-transition::after{content:'_';animation:blink 1s steps(2) infinite;margin-left:4px;}
+
+/* SECTION REVEAL */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .4s ease,transform .4s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.hero.reveal{transform:none;}
+.hero.reveal.visible{opacity:1;}
+
 @media (max-width:640px){
   nav{padding:14px 18px;}
   nav ul{gap:14px;}
