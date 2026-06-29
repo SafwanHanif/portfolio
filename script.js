@@ -368,6 +368,21 @@ const PROJECTS = [
     figmaEmbed: "https://embed.figma.com/proto/1FIC5oMXdSGNgIPhiSiwzU/Cheezious-App?node-id=23-3&p=f&viewport=420%2C316%2C0.05&scaling=scale-down&content-scaling=fixed&starting-point-node-id=23%3A3&page-id=0%3A1&embed-host=share"
   },
   {
+    id: "utorrent-redesign",
+    title: "uTorrent Mobile App Redesign (Practice)",
+    category: "uiux",
+    tagLabel: "UI/UX",
+    summary: "Designed an improved mobile experience for torrent downloading and file management through user-centered UI/UX principles.",
+    problem: "The uTorrent mobile interface was cluttered and hard to navigate — downloading and managing torrents on mobile felt overwhelming.",
+    research: "Reviewed torrent client UX patterns and user complaints about mobile interface density, download management, and file organization.",
+    process: "Focused on decluttering the interface, improving download queue management, and creating clearer visual feedback for active/seeded/paused torrents.",
+    stack: ["Figma", "Prototyping"],
+    github: "#",
+    demo: "#",
+    images: [],
+    figmaEmbed: "https://embed.figma.com/proto/0tepZOEPp5mY9z0kDKrVvO/Utorrent-App?node-id=38-431&page-id=0%3A1&starting-point-node-id=38%3A431&embed-host=share"
+  },
+  {
     id: "job-matching-app",
     title: "Job Matching App",
     category: "uiux",
