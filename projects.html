@@ -76,7 +76,7 @@
           <p>${p.summary}</p>
           <div class="links">
             <a href="project.html?id=${p.id}">View Details</a>
-            <a href="${p.github}">GitHub</a>
+            ${p.github !== "#" ? `<a href="${p.github}">GitHub</a>` : ""}
           </div>
         </div>
       </div>
